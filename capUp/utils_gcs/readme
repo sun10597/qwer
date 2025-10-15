@@ -1,0 +1,25 @@
+install 해야할 것
+  1. ffmpeg
+  2. google-cloud-videointelligence
+  3. google-cloud-vision
+  4. google-cloud-storage  # gcs에 파일 업로드 용
+  5. faster-whisper
+
+GCP 서비스 이용을 위한 키설정과 환경변수 설정
+  - 키 유출 위험이 있어 업로드 X
+
+파일 구조
+utils_gcs/
+  main.py           # 실행용 main
+  file_utils.py     # 확장자 판별, 오디오 추출
+  whisper_utils.py  # Whisper 사용해 STT 추출
+  gcs_upload.py     # GCS 업로드 (gs:// 경로 반환)
+  video.py          # Google Video Intelligence 호출 (STT 미사용)
+  vision.py         # Google Vision 호출
+  parsing.py        # 아직 미구현 (뼈대만)
+
+main.py에 9행 BUCKET_NAME에는 GCS 버킷 url 입력, 46행 local_file에는 분석할 영상/이미지 로컬 파일 경로 입력
+
+변경한 것 
+  1. STT 추출을 intelligence가 아닌 whisper를 사용해 추출 후 결과 json에 입력 - 언어감지, 언어코드매핑 불필요
+  2. 영상 분석 결과가 안 나오는 이슈 해결 - 객체를 프레임 단위로 감지하다 보니 과적현상 발생 -> 초 단위로 변경

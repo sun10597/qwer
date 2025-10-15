@@ -1,0 +1,174 @@
+{
+  "type": "project",
+  "title": "AI 프로젝트 - 고객 리뷰 분석 자동화",
+  "metadata": {
+    "language": "ko-KR",
+    "primary_subject": "데이터 사이언티스트 인터뷰",
+    "created_at": "2025-09-10T13:45:00+09:00"
+  },
+
+  "videos": [
+    {
+      "filename": "interview_day1.mp4",
+      "duration": 52.0,
+      "labels": ["사람", "인터뷰", "실내", "대화"],
+      "objects": ["남성", "책상", "노트북", "마이크"]
+    },
+    {
+      "filename": "office_broll.mp4",
+      "duration": 34.7,
+      "labels": ["오피스", "공간", "풍경", "워크스테이션"],
+      "objects": ["복도", "커피머신", "모니터", "관엽식물"]
+    },
+    {
+      "filename": "slides_demo.mp4",
+      "duration": 28.8,
+      "labels": ["프레젠테이션", "기술", "그래프"],
+      "objects": ["스크린", "슬라이드", "차트", "포인터"]
+    },
+    {
+      "filename": "team_collab.mp4",
+      "duration": 41.2,
+      "labels": ["팀", "협업", "화이트보드", "회의"],
+      "objects": ["사람들", "포스트잇", "마커", "노트북"]
+    }
+  ],
+
+  "segments": [
+    {
+      "source": "interview_day1.mp4",
+      "start": 0.0, "end": 4.2,
+      "speech": "안녕하세요, 저는 데이터 사이언티스트입니다.",
+      "labels": ["사람", "인터뷰", "오프닝"],
+      "objects": ["남성", "책상", "노트북"]
+    },
+    {
+      "source": "interview_day1.mp4",
+      "start": 4.2, "end": 8.7,
+      "speech": "오늘은 저희 팀의 새로운 AI 프로젝트를 소개하려고 합니다.",
+      "labels": ["프레젠테이션", "기술", "소개"],
+      "objects": ["마이크", "노트북", "조명"]
+    },
+    {
+      "source": "interview_day1.mp4",
+      "start": 8.7, "end": 13.6,
+      "speech": "이 프로젝트는 고객 리뷰를 자동 분석해 핵심 인사이트를 도출합니다.",
+      "labels": ["자연어처리", "데이터 분석"],
+      "objects": ["남성", "노트북"]
+    },
+    {
+      "source": "interview_day1.mp4",
+      "start": 13.6, "end": 17.8,
+      "speech": "한국어와 영어 리뷰 모두 지원하고, 프라이버시를 최우선으로 설계했어요.",
+      "labels": ["보안", "다국어"],
+      "objects": ["남성"]
+    },
+
+    {
+      "source": "office_broll.mp4",
+      "start": 0.8, "end": 4.0,
+      "speech": "",
+      "labels": ["오피스", "공간", "인트로 컷"],
+      "objects": ["복도", "사인", "관엽식물"]
+    },
+    {
+      "source": "office_broll.mp4",
+      "start": 4.0, "end": 7.3,
+      "speech": "",
+      "labels": ["워크스테이션", "타이핑"],
+      "objects": ["모니터", "키보드", "책상"]
+    },
+    {
+      "source": "office_broll.mp4",
+      "start": 7.3, "end": 10.5,
+      "speech": "",
+      "labels": ["브롤", "커피 타임"],
+      "objects": ["커피머신", "머그컵"]
+    },
+
+    {
+      "source": "slides_demo.mp4",
+      "start": 0.3, "end": 3.8,
+      "speech": "",
+      "labels": ["프레젠테이션", "AI Pipeline"],
+      "objects": ["스크린", "슬라이드", "차트"],
+      "ocr_text": "AI Pipeline: Ingestion → NLP → Scoring"
+    },
+    {
+      "source": "slides_demo.mp4",
+      "start": 3.8, "end": 7.1,
+      "speech": "",
+      "labels": ["지표", "정확도"],
+      "objects": ["차트", "포인터"],
+      "ocr_text": "Precision 92.4%, Recall 89.7%"
+    },
+    {
+      "source": "slides_demo.mp4",
+      "start": 7.1, "end": 10.8,
+      "speech": "",
+      "labels": ["성능", "지연시간"],
+      "objects": ["차트"],
+      "ocr_text": "Latency p95: 120 ms"
+    },
+
+    {
+      "source": "team_collab.mp4",
+      "start": 1.2, "end": 5.5,
+      "speech": "팀원A: 이번 릴리즈에서 분류 정확도가 조금 더 올랐어요.",
+      "labels": ["회의", "모니터링"],
+      "objects": ["화이트보드", "포스트잇", "마커"]
+    },
+    {
+      "source": "team_collab.mp4",
+      "start": 5.5, "end": 9.2,
+      "speech": "팀원B: 고객 시나리오별 라우팅도 손봐야 해요.",
+      "labels": ["기획", "라우팅"],
+      "objects": ["사람들", "노트북", "화이트보드"]
+    },
+    {
+      "source": "team_collab.mp4",
+      "start": 9.2, "end": 12.7,
+      "speech": "팀원A: 주간 배포 일정은 목요일 오후로 합시다.",
+      "labels": ["스케줄", "결정"],
+      "objects": ["시계", "포스트잇"]
+    }
+  ],
+
+  "images": [
+    {
+      "filename": "office_exterior.jpg",
+      "labels": ["건물 외관", "회사", "브랜드"],
+      "objects": ["건물", "로고", "유리 파사드"]
+    },
+    {
+      "filename": "product_ui.png",
+      "labels": ["앱 UI", "대시보드", "그래프"],
+      "objects": ["차트", "카드", "탭"]
+    },
+    {
+      "filename": "team_workshop.jpg",
+      "labels": ["회의", "화이트보드", "팀"],
+      "objects": ["사람들", "포스트잇", "마커"]
+    },
+    {
+      "filename": "logo.png",
+      "labels": ["브랜드", "로고", "심볼"],
+      "objects": ["로고"]
+    }
+  ],
+
+  "audio": [
+    {
+      "filename": "bgm_upbeat.mp3",
+      "labels": ["배경음악", "경쾌함", "전자"],
+      "duration": 120.0,
+      "bpm": 120
+    },
+    {
+      "filename": "bgm_soft.mp3",
+      "labels": ["배경음악", "잔잔함", "피아노"],
+      "duration": 95.0,
+      "bpm": 85
+    }
+  ]
+}
